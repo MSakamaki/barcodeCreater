@@ -1,0 +1,13 @@
+{
+	"name": "BARCODE MAKER",
+	"version": "0.0.1",
+	"main": "index.html",
+	"ignore": [
+		"**/.*"
+	],
+	"dependencies": {
+		"jquery": "~1.3.2",
+		"angular": "*"
+	}
+}
+
