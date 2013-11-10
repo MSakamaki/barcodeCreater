@@ -12,17 +12,12 @@
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="js/jquery-barcode.js"></script>
     <script src="js/angular-barResouce.js"></script>
-    <script src="js/resouce.js"></script>
+    <script src="js/client.js"></script>
 </head>
 <body ng-app="ng-app">
     <div ng-controller="bCtrl" ng-init="connect()">
-        <label>ID:<input type="text" ng-model="id" /></label>
-        <label>NAME:<input type="text" ng-model="name" /></label>
-        <br>
-        <button ng-click="add()">ADDED</button>
-        <div ng-repeat="i in list">
-            K:{{i.id}} / V:{{i.name}} / C:{{i.checkin}}
-        </div>
+        <label>MEIBO::<input type="text" ng-model="id" /></label>
+        <button ng-click="checkin()">CHECKIN</button>
     </div>
 </body>
 </html>

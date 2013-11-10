@@ -7,6 +7,7 @@ angular.module('ng-app', ['ng-barcoder'])
         $scope.connect=function(){
             /*barResouce.connect('localhost',8080);*/
             barClient.connect('192.168.1.2',8081);
+            barcoder.init("bdata","bcTarget","code39","192.168.1.2",8082);
             barMobile.connect('192.168.1.2',8083);
         };
 /*
@@ -38,7 +39,6 @@ angular.module('ng-app', ['ng-barcoder'])
 
 
         /* barcoder */
-        barcoder.init("bdata","bcTarget","code39","localhost",8082);
         $scope.input = function(){
             console.log($scope.barcodeData);
             //barMobile.send(JSON.stringify({id : $scope.barcodeData}));
